@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"namperlovequang\startup_stm32f103xb.o"
+"namperlovequang\main.o"
+"namperlovequang\stm32f1xx_it.o"
+"namperlovequang\stm32f1xx_hal_msp.o"
+"namperlovequang\stm32f1xx_hal_gpio_ex.o"
+"namperlovequang\stm32f1xx_hal_i2c.o"
+"namperlovequang\stm32f1xx_hal.o"
+"namperlovequang\stm32f1xx_hal_rcc.o"
+"namperlovequang\stm32f1xx_hal_rcc_ex.o"
+"namperlovequang\stm32f1xx_hal_gpio.o"
+"namperlovequang\stm32f1xx_hal_dma.o"
+"namperlovequang\stm32f1xx_hal_cortex.o"
+"namperlovequang\stm32f1xx_hal_pwr.o"
+"namperlovequang\stm32f1xx_hal_flash.o"
+"namperlovequang\stm32f1xx_hal_flash_ex.o"
+"namperlovequang\stm32f1xx_hal_exti.o"
+"namperlovequang\stm32f1xx_hal_tim.o"
+"namperlovequang\stm32f1xx_hal_tim_ex.o"
+"namperlovequang\stm32f1xx_hal_uart.o"
+"namperlovequang\system_stm32f1xx.o"
+"namperlovequang\clcd_i2c.o"
+"namperlovequang\ds3231.o"
+"namperlovequang\ser_timer.o"
+--strict --scatter "NamperloveQuang\NamperloveQuang.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NamperloveQuang.map" -o NamperloveQuang\NamperloveQuang.axf
